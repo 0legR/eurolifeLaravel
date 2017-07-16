@@ -46,6 +46,7 @@ section {
 	border: none;
 	clear: both;
 	color: red;
+	margin-bottom: 0;
 }
 
 .nav-custom a {
@@ -81,12 +82,45 @@ section {
 	height: 90vh;
 }
 
-.metLogo > img, .graweLogo > img{
-	height: 50%;
-	width: 50%;
+.metLogo img, .graweLogo img{
+	height: 25vh;
+	width: 40%;
 	float: right;
-	clear: right;
-	margin: 40px;
+	/*clear: right;*/
+	margin: 50px 30px 30px 30px;
+	display: inline-block;
+}
+
+.main-text {
+	float:left;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 0;
+	margin-top: 50px;
+	height: 40vh;
+	text-overflow: ellipsis;
+	/*white-space: nowrap;*/
+	overflow: hidden;
+}
+
+.showText {
+	font-size: 38px;
+	margin: 0;
+	text-align: center;
+	color: red;
+	box-shadow:none;
+	height: 1vh;
+}
+.showText p {
+	font-size: 14px;
+	margin: 0 0 -10px 0;
+}
+.showText:hover {
+	color: #458B00;
+	box-shadow: 10px 10px 5px #1E90FF;
+	/*shadow: 0px -4px #0000CD;*/
 }
 /*-----------container-home end---------------*/
-
+.footer-custom {
+	display: none;
+}

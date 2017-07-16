@@ -17,7 +17,6 @@ class IndexController extends Controller
     	$people = People::get(array('name', 'position', 'images', 'text'));
     	$portfolios = Portfolio::get(array('name', 'images', 'filter'));
     	$services = Service::get(array('name', 'text', 'icon'));
-
-    	return view('public.index');
+    	return view('public.index', ['pages' => $pages]);
     }
 }

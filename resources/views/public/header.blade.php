@@ -5,7 +5,7 @@
 				<img src="{{ asset('/img/logo.svg') }}" alt="logo">
 			</div>
 			<div class="slogan">
-		  		<h1>Разом у майбутнє</h1>
+		  		<h1>Разом на вершині</h1>
 			</div>
 			<div class="hamburger" id="hamburger">
 				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>

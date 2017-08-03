@@ -6,4 +6,7 @@
 	<div>
 		<p>{{$message->name}}</p>
 	</div>
+	<div>
+		<p>{{$message->price}}</p>
+	</div>
 </div>

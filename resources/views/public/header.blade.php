@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row" id="Home">
 	<div class="col-sm-12">
-		<div class="page-header header">
+		<div class="page-header header" id="header">
 			<div class="logo">
 				<img src="{{ asset('/img/logo.svg') }}" alt="logo">
 			</div>
@@ -15,13 +15,16 @@
 			    <!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      <ul class="nav navbar-nav">
-			        <li><a href="#">Головна</a></li>
-			        <li><a href="#about">Про компанію</a></li>
-			        <li><a href="#service">Продукти MetLife</a></li>
-			        <li><a href="#portfolio">Продукти Grawe</a></li>
-			        <li><a href="#clients">Клієнти</a></li>
-			        <li><a href="#team">Команда</a></li>
-			        <li><a href="#contact">Зворотній зв'язок</a></li>
+			      	@if(isset($pages))
+				      	@foreach($pages as $page)
+				      	<li><a href="#{{ $page->alias }}" title="">{{ $page->name }}</a></li>
+				      	@endforeach
+			      	@endif
+			      	@if(isset($menu))
+			      		@foreach($menu as $key => $item)
+				        <li><a href="#{{ $key }}">{{ $item }}</a></li>
+			      		@endforeach
+			        @endif
 			      </ul>
 			      <form class="navbar-form navbar-right">
 			        <div class="form-group">

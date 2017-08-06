@@ -79,7 +79,7 @@ section {
 /*-----------container-home start---------------*/
 .container-home {
 	background: linear-gradient(to right bottom, #FFF ,#ADD8E6);
-	height: 90vh;
+	min-height: 90vh;
 }
 
 .metLogo img, .graweLogo img{
@@ -101,9 +101,13 @@ section {
 	text-overflow: ellipsis;
 	/*white-space: nowrap;*/
 	overflow: hidden;
+	transition: height 2s;
+	-webkit-transition: height 2s;
 }
 
-.showText {
+.show-text {
+	display: block;
+	clear: both;
 	font-size: 38px;
 	margin: 0;
 	text-align: center;
@@ -111,14 +115,68 @@ section {
 	box-shadow:none;
 	height: 1vh;
 }
-.showText p {
+.show-text p {
 	font-size: 14px;
 	margin: 0 0 -10px 0;
 }
-.showText:hover {
+.show-text:hover {
 	color: #458B00;
-	box-shadow: 10px 10px 5px #1E90FF;
-	/*shadow: 0px -4px #0000CD;*/
+}
+/*------------About page------------------------*/
+.header-about {
+	display: block;
+	min-height: 20vh;
+	background: linear-gradient(to right, #FFFFFF, #63B8FF);
+}
+.header-about h1 {
+	font-family: 'Lobster', cursive ;
+	background: -webkit-linear-gradient(#FFD700, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 100%;
+	float:right;
+	margin: 6vh 20vh 0 0;
+}
+
+.container-about {
+	min-height: 80vh;
+	background: linear-gradient(to right bottom, #FFF ,#ADD8E6);
+}
+
+.photo-about {
+	display: block;
+	margin-top: 10vh;
+	float: right;
+	background: #fc0; /* Цвет фона */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding: 10px;
+}
+
+.text-about {
+	display: block;
+}
+/*-------------button up----------------------*/
+.button-up {
+	display: none;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+	border-radius: 50px;
+	position: fixed;
+	right: 5px;
+	bottom: 0;
+	z-index: 99;
+	cursor: pointer;
+	padding: 1px 0 0 0;
+}
+
+.button-up:hover {
+	background-color: lime;
+	padding: 1px 0 0 0;
+}
+
+.gliph-icon {
+	font-size: 35px;
 }
 /*-----------container-home end---------------*/
 .footer-custom {
